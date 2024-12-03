@@ -7,43 +7,37 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="burger-menu">
-        <div class="burger-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-        </div>
-    </div>
-
-    <nav class="side-menu">
-        <div class="menu-items">
-            <a href="index.html">Home</a>
-            <a href="products.html">Collection</a>
-            <a href="contact.html" class="active">Contact</a>
-        </div>
-    </nav>
-
+    <div class="noise-overlay"></div>
+    
     <main class="contact-page">
         <div class="contact-content">
-            <h1>Contact</h1>
+            <div class="contact-header">
+                <h1 class="brand-name">NIESHOP</h1>
+            </div>
+            
             <div class="contact-methods">
                 <div class="contact-method">
-                    <h2>WeChat</h2>
-                    <p>NNIIEE001</p>
-                </div>
-                <div class="contact-method">
                     <h2>Taobao Store</h2>
-                    <a href="https://shop473803271.world.taobao.com/" target="_blank" class="store-link">Visit Store</a>
+                    <p>Visit our official Taobao store for the latest products and deals.</p>
+                    <a href="https://shop473803271.world.taobao.com/" target="_blank" class="contact-link">Shop Now</a>
+                </div>
+                
+                <div class="contact-method">
+                    <h2>WeChat</h2>
+                    <p>Connect with us on WeChat for direct communication and support.</p>
+                    <p class="contact-link">NNIIEE001</p>
                 </div>
             </div>
         </div>
     </main>
 
-    <script src="navigation.js"></script>
-    <div class="page-title">Contact</div>
-    <script src="cursor.js"></script>
+    <div class="social-links">
+        <a href="index.html">Home</a>
+        <span class="separator">|</span>
+        <a href="products.html">Products</a>
+    </div>
 </body>
 </html> 

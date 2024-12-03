@@ -132,4 +132,20 @@ class ProductManager {
 document.addEventListener('DOMContentLoaded', () => {
     const productManager = new ProductManager();
     productManager.displayProducts();
+    
+    // Add smooth scrolling for mobile
+    if (window.innerWidth < 768) {
+        document.documentElement.style.scrollBehavior = 'smooth';
+        
+        // Optional: Add scroll snapping
+        const productCards = document.querySelectorAll('.product-card');
+        productCards.forEach(card => {
+            card.addEventListener('click', (e) => {
+                if (window.innerWidth < 768) {
+                    e.preventDefault();
+                    card.scrollIntoView({ behavior: 'smooth' });
+                }
+            });
+        });
+    }
 }); 
